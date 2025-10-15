@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url("/assets/fonts/Roboto-Regular.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(-45deg, #8a8a8a, #0c0d0e, #0d0324, #010435);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    color: #fff;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.about-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid goldenrod;
+    padding: 15px;
+}
+
+/* Underline */
+.underline {
+    width: 100%;
+    height: 0.5px;
+    background-color: rgb(76, 80, 84);
+
+}
+
+/* Education and experience */
+.timeline {
+  border-left: 3px solid #f8ca00; /* vertical line */
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  position: absolute;
+  left: -9px;
+  top: 5px;
+}
+
+
+/* See more button */
+.seemore-btn:hover {
+    background-color: goldenrod;
+}
+
+/* Footer section */
+.footer-title {
+    cursor: pointer;
+    color: white;
+}
+
+.footer-title:hover {
+    text-decoration: underline;
+    color: goldenrod;
+}
+
+footer .sub-container {
+    width: 600px;
+    max-width: 100%;
+    height: auto;
+    top: 0;
+    left: 50%;
+    translate: -50% -50%;
+}
